@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "DM Sans";
+}
+
+/* Shared styles */
+
+.secondary-btn {
+    padding: 0.625rem 1.5rem;
+    border: 1px solid #00856F;
+    border-radius: 40px;
+}
+
+.secondary-btn a {
+    color: #00856F;
+    text-decoration: none;
+}
+
+
+
+/* Header section design */
+
+header {
+    margin: 0.5rem 7rem 0 7rem;
+}
+
+/* Nav bar design */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #485145;
+}
+
+#selected {
+    color: #061800;
+    font-weight: bold;
+}
+
+
+.hamburger-menu {
+    display: none;
+}
+
+
+/* Device width under 576px */
+
+@media screen and (max-width:576px) {
+    header {
+        margin: 1rem;
+    }
+    
+    .nav-links {
+        display: none;
+    }
+
+    #consultation-btn {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: inline-block;
+    }
+}
