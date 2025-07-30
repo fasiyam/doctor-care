@@ -82,3 +82,58 @@ nav {
         display: inline-block;
     }
 }
+
+
+/* Device width between 576px and 768px */
+
+@media screen and (min-width:576px)  and (max-width:768px) {
+    header {
+        margin: 1.5rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .secondary-btn {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: inline-block;
+    }
+}
+
+
+
+/* Device width between 768px and 992px */
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    header {
+        margin: 1rem 2rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: inline-block;
+    }
+
+    #nav-right {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.5rem;
+    }
+}
+
+
+/* Device width between 992px and 1024px */
+
+@media screen and (min-width:992px) and (max-width:1024px) {
+    header{
+        margin: 1rem 2rem;
+    }
+}
